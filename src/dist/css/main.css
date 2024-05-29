@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-custom {
+  padding: 15px 30px;
+  margin: 10px;
+}
+
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #dc3545;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #dc3545 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 0.9rem;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #dc3545;
+  --color-text: #231942;
+  --navbar-color: #ffffff;
+  --navbar-color-text: #000000;
+}
+
+/*                              Navbar -- Start */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+}
+
+.container a .navbar-brand {
+  font-weight: 900;
+  background-color: crimson;
+}
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--navbar-color-text);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+.navbar.color-active {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.49);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+}
+
+.navbar .nav-link a:hover {
+  color: var(--secondary-color);
+}
+
+#basic-navbar-nav {
+  transition: 0.3s ease;
+}
+.navbar .nav-link .active {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  transition: ease 0.3s;
+}
+.navbar .nav-link .active:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn {
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+/*                                Navbar -- End */
+
+/*                                Header -- Start */
+header {
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-box .main-container {
+  --animate-delay: 1s;
+  animation-duration: 2.5s;
+}
+
+.homepage .header-box h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--navbar-color-text);
+}
+.homepage.header-box h1 h3 {
+  font-weight: 700;
+}
+
+.homepage.header-box p {
+  line-height: 2;
+  color: var(--color-text);
+  font-weight: 500;
+  --animate-delay: 1.1s;
+  animation-duration: 2s;
+}
+.homepage img {
+  --animate-delay: 0.3s;
+  animation-duration: 2s;
+}
+.image {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .main-container {
+    padding: 9rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .homepage .header-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .homepage.header-box p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .homepage .header-box h1 {
+    font-size: 2.4rem;
+  }
+
+  .homepage.header-box p {
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}
+
+/*                                Header -- End */
+
+.homepage {
+  background-color: var(--primary-color);
+}
+
+/*                                Kelas -- Start */
+
+.homepage .kelas {
+  background-color: var(--primary-color);
+  padding-bottom: 80px;
+  max-width: 100%;
+}
+
+.kelas i {
+  color: gold;
+}
+
+.kelas h5 {
+  font-size: 1.05rem;
+}
+
+.homepage .kelas .row:nth-child(1) {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.pilihan-kelas {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kelas-card {
+  line-height: 2;
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+  transition: ease 0.3s;
+  margin: 0 auto; /* Tambahkan margin di sini untuk memberikan gap antara kolom */
+  transform: scale(0.9);
+}
+
+.kelas-card:hover {
+  transform: scale(1);
+}
+
+.kelas-card-desc {
+  padding-left: 10px;
+}
+
+.homepage i {
+  color: gold;
+}
+
+.kelas-card-price {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(45, 111, 232);
+}
+
+.kelas-card-price p,
+.kelas-card-price button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.container .last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 575px) {
+  .kelas-card {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.kelas {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.kelas .row:nth-child(1) {
+  padding-top: 9rem;
+}
+
+/*                                Kelas -- End */
+
+/*                                Kelas Component -- Start  */
+.kelas-terbaik {
+  background-color: var(--primary-color);
+  padding-bottom: 80px;
+  max-width: 100%;
+  transform: scale(0.97);
+}
+
+.kelas-terbaik .row:nth-child(1) {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.kelas-terbaik .row:nth-child(1) h1,
+.kelas-terbaik .row:nth-child(1) p {
+  color: var(--color-text);
+}
+
+.pilihan-kelas-terbaik {
+  margin-bottom: 50px;
+}
+
+.kelas-card-terbaik {
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+  transition: ease 0.3s;
+  width: 100%;
+  max-width: 350px; /* Maksimal lebar card */
+}
+
+.kelas-card-terbaik:hover {
+  transform: scale(1.05);
+}
+
+.kelas-card-desc-terbaik {
+  padding: 10px;
+}
+
+.kelas-card-terbaik i {
+  color: gold;
+}
+
+.kelas-card-price-terbaik {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(45, 111, 232);
+}
+
+.kelas-card-price-terbaik p,
+.kelas-card-price-terbaik button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.container .last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 575px) {
+  .kelas-card-terbaik {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.kelas-terbaik {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.kelas-terbaik .row:nth-child(1) {
+  padding-top: 9rem;
+}
+
+/*                                Kelas Component -- End  */
+
+/*                                Testimonial -- Start */
+
+.testimonial {
+  background-color: var(--primary-color);
+  margin: 0;
+}
+
+/*? Swiper  */
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 92%;
+  height: 92%;
+  z-index: 1;
+  cursor: grab;
+  padding: 20px;
+}
+
+.swiper:active {
+  cursor: grabbing;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 2rem;
+
+  border-radius: 50px;
+
+  text-align: start;
+  font-size: 14px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-text);
+  transition: ease 0.3s;
+}
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.swiper-slide h4 {
+  padding-top: 15px;
+  font-size: 20px;
+}
+.swiper-slide h6 {
+  font-size: 15px;
+  color: #6e6784;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
+}
+/*? Swiper  */
+/*                                Testimonial -- End */
+
+/*                                Testimonial Page -- Start */
+.testimonial-page h1 {
+  padding-top: 4rem;
+  font-size: 2.5rem;
+}
+
+.testimonial-page {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  max-width: 350px; /* Maksimal lebar card */
+  width: 100%;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial-card h4,
+.testimonial-card h6 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  .testimonial-card {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/*                                Testimonial Page -- End */
+
+/*            FAQ --- Start */
+.faq h1 {
+  font-size: 2rem;
+}
+
+div .faq {
+  background-color: var(--primary-color);
+  max-width: 100%;
+}
+
+.faq .row:nth-child(1) {
+  padding-top: 9rem;
+  margin-bottom: 50px;
+}
+
+.faq .accordion .accordion-button {
+  color: var(--color-text);
+  font-weight: bold;
+  background-color: white;
+  line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/*            FAQ --- End */
+
+/* Syarat Ketentuan Page -- Start */
+.syarat-ketentuan {
+  background-color: #f9f9f9;
+  color: black;
+}
+.syarat-ketentuan h1 {
+  padding-top: 6rem;
+  font-size: 2rem; /* Tambahkan jarak atas */
+}
+.syarat-ketentuan p {
+  margin-bottom: 4rem;
+}
+
+.syarat-ketentuan .accordion-item {
+  margin-bottom: 10px;
+}
+
+.syarat-ketentuan .accordion-button {
+  color: var(--color-text);
+  font-weight: bold;
+  background-color: white;
+  line-height: 1.5;
+}
+
+.syarat-ketentuan .btn {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.syarat-ketentuan .accordion-item {
+  margin-bottom: 10px;
+}
+
+.syarat-ketentuan .btn {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.syarat-ketentuan .btn:hover {
+  color: var(--primary-color);
+}
+
+/* Syarat Ketentuan Page -- End */
+
+/* Footer -- Start */
+.footer {
+  width: 100%;
+  min-height: 60vh;
+}
+
+.footer .row .col h3 {
+  color: var(--color-text);
+}
+
+.footer .row .col:nth-child(1) desc {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.brands-link a {
+  display: flex;
+  color: black;
+  column-gap: 5px;
+  transition: ease 0.3s;
+  padding-bottom: 5px;
+}
+
+.brands-link a:hover {
+  color: #dc3545;
+  transform: scale(1.02);
+}
+
+.logo a:hover {
+  transform: scale(1.2);
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) {
+  gap: 10px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  transition: ease 0.3s;
+}
+.footer .row:nth-child(1) .col:nth-child(2) a:hover {
+  color: #dc3545;
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 575px) {
+  .footer .row .col a {
+    font-size: 12px;
+  }
+  .footer .row .col {
+    width: 100%; /* Menjadikan lebar kolom penuh pada layar kecil */
+    margin-top: 20px; /* Menambahkan margin atas antara setiap kolom */
+  }
+}
+@media screen and (max-width: 435px) {
+  .footer .row .col {
+    width: 100%; /* Menjadikan lebar kolom penuh pada layar kecil */
+    margin-top: 20px; /* Menambahkan margin atas antara setiap kolom */
+  }
+}
+
+/* Footer -- End */
