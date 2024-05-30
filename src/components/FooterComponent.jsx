@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="brands-link d-flex align-items-center mt-4">
               <Link
                 className="text-decoration-none d-flex align-items-center"
-                to="https://wa.me/628953283339786"
+                to="https://wa.me/62895328339786"
               >
                 <i className="fa-brands fa-whatsapp fs-4 me-2"></i>{" "}
                 <p className="m-0">+62-895-3283-39786</p>{" "}
