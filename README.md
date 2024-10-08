@@ -31,24 +31,24 @@ Click [here]( https://webcourse-react-el.vercel.app/) to see the websites !
 The application will be running locally on http://localhost:3000.
 
 ## Screenshoot websites 🔥🔥
-### Landing page
+### 1. Landing page 👌
 ![image](https://github.com/user-attachments/assets/ed60bf98-9426-4021-a542-4ac611cb569e)
 ![image](https://github.com/user-attachments/assets/122455e5-0dbc-4f46-b0e7-f04e253a5511)
 
-### Best Class 
+### 2. Best Class 👑
 ![image](https://github.com/user-attachments/assets/e9c6c1eb-33f1-4c4d-b202-2b9b1811196e)
 ![image](https://github.com/user-attachments/assets/59578490-9b47-4cda-8cc6-014f3d9422e9)
 
-### Testimonial 
+### 3. Testimonial ✅
 ![image](https://github.com/user-attachments/assets/3e8d5fd6-27e3-4d76-a80e-12b70344f9e4)
 ![image](https://github.com/user-attachments/assets/ce29b090-d0ab-4749-979c-5479d0651b9e)
 
-### FaQ
+### FaQ ❓❓
 ![image](https://github.com/user-attachments/assets/68575d91-5c29-44da-9dc6-038b4d53d9b9)
 ![image](https://github.com/user-attachments/assets/764165ab-ae12-4827-b19d-c387dd51cebe)
 
 
 
 
-## Contribution
+## Contribution ✨✨
 Feel free to contribute to this project by opening issues or submitting pull requests. Feedback and ideas are always welcome!
